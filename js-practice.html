@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript基础知识练习</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #555;
+            margin-top: 0;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript基础知识练习</h1>
+    
+    <div class="section">
+        <h2>1. 变量定义</h2>
+        <pre><code>// 使用let定义变量
+let name = "JavaScript";
+// 使用const定义常量
+const version = 1.0;
+// 使用var定义变量（旧方式）
+var age = 25;
+
+console.log("Name:", name);
+console.log("Version:", version);
+console.log("Age:", age);</code></pre>
+    </div>
+    
+    <div class="section">
+        <h2>2. 变量类型</h2>
+        <pre><code>// 字符串类型
+let stringType = "Hello World";
+// 数字类型
+let numberType = 42;
+// 布尔类型
+let booleanType = true;
+// 数组类型
+let arrayType = [1, 2, 3, 4, 5];
+// 对象类型
+let objectType = { name: "John", age: 30 };
+// 函数类型
+let functionType = function() { return "Hello"; };
+// undefined类型
+let undefinedType;
+// null类型
+let nullType = null;
+
+console.log("String type:", typeof stringType);
+console.log("Number type:", typeof numberType);
+console.log("Boolean type:", typeof booleanType);
+console.log("Array type:", typeof arrayType);
+console.log("Object type:", typeof objectType);
+console.log("Function type:", typeof functionType);
+console.log("Undefined type:", typeof undefinedType);
+console.log("Null type:", typeof nullType);</code></pre>
+    </div>
+    
+    <div class="section">
+        <h2>3. 表达式</h2>
+        <pre><code>// 算术表达式
+let sum = 10 + 5;
+let difference = 10 - 5;
+let product = 10 * 5;
+let quotient = 10 / 5;
+let remainder = 10 % 3;
+
+// 比较表达式
+let isEqual = 10 == "10";
+let isStrictEqual = 10 === "10";
+let isGreater = 10 > 5;
+let isLess = 10 < 5;
+
+// 逻辑表达式
+let andExpression = true && false;
+let orExpression = true || false;
+let notExpression = !true;
+
+console.log("Sum:", sum);
+console.log("Difference:", difference);
+console.log("Product:", product);
+console.log("Quotient:", quotient);
+console.log("Remainder:", remainder);
+console.log("Is equal:", isEqual);
+console.log("Is strict equal:", isStrictEqual);
+console.log("Is greater:", isGreater);
+console.log("Is less:", isLess);
+console.log("And expression:", andExpression);
+console.log("Or expression:", orExpression);
+console.log("Not expression:", notExpression);</code></pre>
+    </div>
+    
+    <div class="section">
+        <h2>4. 流程控制</h2>
+        <pre><code>// if-else语句
+let score = 85;
+if (score >= 90) {
+    console.log("优秀");
+} else if (score >= 80) {
+    console.log("良好");
+} else if (score >= 60) {
+    console.log("及格");
+} else {
+    console.log("不及格");
+}
+
+// switch语句
+let day = 3;
+switch (day) {
+    case 1:
+        console.log("星期一");
+        break;
+    case 2:
+        console.log("星期二");
+        break;
+    case 3:
+        console.log("星期三");
+        break;
+    case 4:
+        console.log("星期四");
+        break;
+    case 5:
+        console.log("星期五");
+        break;
+    default:
+        console.log("周末");
+}
+
+// for循环
+console.log("For loop:");
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+// while循环
+console.log("While loop:");
+let j = 0;
+while (j < 5) {
+    console.log(j);
+    j++;
+}
+
+// do-while循环
+console.log("Do-while loop:");
+let k = 0;
+do {
+    console.log(k);
+    k++;
+} while (k < 5);</code></pre>
+    </div>
+    
+    <div class="section">
+        <h2>5. 函数</h2>
+        <pre><code>// 函数声明
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+// 函数表达式
+const calculateSum = function(a, b) {
+    return a + b;
+};
+
+// 箭头函数
+const multiply = (a, b) => a * b;
+
+// 带默认参数的函数
+function greetWithDefault(name = "World") {
+    return "Hello, " + name + "!";
+}
+
+// 调用函数
+console.log(greet("John"));
+console.log(calculateSum(5, 3));
+console.log(multiply(4, 6));
+console.log(greetWithDefault());
+console.log(greetWithDefault("Alice"));</code></pre>
+    </div>
+    
+    <script>
+        // 变量定义
+        let name = "JavaScript";
+        const version = 1.0;
+        var age = 25;
+        
+        console.log("Name:", name);
+        console.log("Version:", version);
+        console.log("Age:", age);
+        
+        // 变量类型
+        let stringType = "Hello World";
+        let numberType = 42;
+        let booleanType = true;
+        let arrayType = [1, 2, 3, 4, 5];
+        let objectType = { name: "John", age: 30 };
+        let functionType = function() { return "Hello"; };
+        let undefinedType;
+        let nullType = null;
+        
+        console.log("String type:", typeof stringType);
+        console.log("Number type:", typeof numberType);
+        console.log("Boolean type:", typeof booleanType);
+        console.log("Array type:", typeof arrayType);
+        console.log("Object type:", typeof objectType);
+        console.log("Function type:", typeof functionType);
+        console.log("Undefined type:", typeof undefinedType);
+        console.log("Null type:", typeof nullType);
+        
+        // 表达式
+        let sum = 10 + 5;
+        let difference = 10 - 5;
+        let product = 10 * 5;
+        let quotient = 10 / 5;
+        let remainder = 10 % 3;
+        
+        let isEqual = 10 == "10";
+        let isStrictEqual = 10 === "10";
+        let isGreater = 10 > 5;
+        let isLess = 10 < 5;
+        
+        let andExpression = true && false;
+        let orExpression = true || false;
+        let notExpression = !true;
+        
+        console.log("Sum:", sum);
+        console.log("Difference:", difference);
+        console.log("Product:", product);
+        console.log("Quotient:", quotient);
+        console.log("Remainder:", remainder);
+        console.log("Is equal:", isEqual);
+        console.log("Is strict equal:", isStrictEqual);
+        console.log("Is greater:", isGreater);
+        console.log("Is less:", isLess);
+        console.log("And expression:", andExpression);
+        console.log("Or expression:", orExpression);
+        console.log("Not expression:", notExpression);
+        
+        // 流程控制
+        let score = 85;
+        if (score >= 90) {
+            console.log("优秀");
+        } else if (score >= 80) {
+            console.log("良好");
+        } else if (score >= 60) {
+            console.log("及格");
+        } else {
+            console.log("不及格");
+        }
+        
+        let day = 3;
+        switch (day) {
+            case 1:
+                console.log("星期一");
+                break;
+            case 2:
+                console.log("星期二");
+                break;
+            case 3:
+                console.log("星期三");
+                break;
+            case 4:
+                console.log("星期四");
+                break;
+            case 5:
+                console.log("星期五");
+                break;
+            default:
+                console.log("周末");
+        }
+        
+        console.log("For loop:");
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+        
+        console.log("While loop:");
+        let j = 0;
+        while (j < 5) {
+            console.log(j);
+            j++;
+        }
+        
+        console.log("Do-while loop:");
+        let k = 0;
+        do {
+            console.log(k);
+            k++;
+        } while (k < 5);
+        
+        // 函数
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+        
+        const calculateSum = function(a, b) {
+            return a + b;
+        };
+        
+        const multiply = (a, b) => a * b;
+        
+        function greetWithDefault(name = "World") {
+            return "Hello, " + name + "!";
+        }
+        
+        console.log(greet("John"));
+        console.log(calculateSum(5, 3));
+        console.log(multiply(4, 6));
+        console.log(greetWithDefault());
+        console.log(greetWithDefault("Alice"));
+    </script>
+</body>
+</html>
